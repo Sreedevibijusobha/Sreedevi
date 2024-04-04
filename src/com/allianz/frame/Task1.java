@@ -21,7 +21,7 @@ public static void main(String[] args) {
 	        driver.manage().window().maximize();
 	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	        
-	        driver.get("http://demo.openemr.io/b/openemr/");
+	        driver.get("http://demo.openemr.io/b/openemr/index.php");
 	       
 	        driver.findElement(By.name("authUser")).sendKeys("admin");
 	        driver.findElement(By.name("clearPass")).sendKeys("pass");
